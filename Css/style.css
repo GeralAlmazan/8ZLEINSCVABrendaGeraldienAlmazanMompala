@@ -1,7 +1,9 @@
-{
-    background-color: rgb(128,55,224);
-    color: red;
+*{
+    background-color:  rgb(110, 140, 138);
+    color: rgb(26, 23, 23);
     font-size: 20 px;
-
+    align-items: center;
+    justify-self: center;
+    text-align: center;
 
 }
