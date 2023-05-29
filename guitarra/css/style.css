@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+*{
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Work Sans ';
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background: #244c60;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ab765d;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3 px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #ab765d;
+
+}
+.nav-responsive{
+    background-color: #ab765d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*inicio*/
+.inicio{
+    padding: 5px;
+   background-image: 
+    url(fondoguitar.jpg);
+    background-size: cover;
+    height: 130vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #024369;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid  #c4c4c4;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+ 
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #c4c4c4;
+}
+
+
+/*Sobre la guitarra*/
+
+.sobreguitarra{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobreguitarra .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobreguitarra h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobreguitarra .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobreguitarra .contenido-seccion p span{
+    color: #ab765d;
+    font-weight: bold;
+}
+
+.sobreguitarra .fila{
+    display: flex;
+}
+
+.sobreguitarra .fila .col{
+    width: 50%;
+}
+
+.sobreguitarra .fila .col h3{
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+
+img{
+    margin-top: 25px;
+    border: 10px solid  #c4c4c4;
+    display: block;
+    width: 35%;
+    margin: auto;
+    
+}
+
+/*tipos de guitarra*/
+.tipoguitarras{
+    background-color:#2b2b2b;
+    color: #fff;
+    padding: 50px 20px;
+}
+.tipoguitarras .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.tipoguitarras h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tipoguitarras .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipoguitarras .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+
+.tipoguitarras .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+
+.tipoguitarras .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+
+.tipoguitarras .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #2b2b2b;
+    position: relative;
+}
+
+.tipoguitarras .fila .item h4{
+    font-size: 20px;
+    color: #ab765d;
+    margin-bottom: 10px;
+}
+
+.tipoguitarras .fila .item .casa{
+    color: #ab765d;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.tipoguitarras .fila .item .fecha{
+    display: block;
+    color: #ab765d;
+    margin-bottom: 10px;
+}
+
+.tipoguitarras .fila .item p{
+    line-height: 24px;
+}
+
+.tipoguitarras .fila .izq{
+    border-right: 2px solid #3498db;
+    margin-right: 20px;
+}
+
+.tipoguitarras .fila .der{
+    border-left: 2px solid  #3498db;
+    margin-left: 20px;
+}
+
+.tipoguitarras .fila .item .conectori{
+    height: 2px;
+    background-color:  #3498db ;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.tipoguitarras .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:  #3498db;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+
+.tipoguitarras .fila .item .conectord{
+    height: 2px;
+    background-color:  #3498db;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.tipoguitarras .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #3498db;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+/*acordes*/
+.acordes{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.acordes .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.acordes h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.acordes .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.acordes .contenido-seccion p span{
+    color: #ab765d;
+    font-weight: bold;
+}
+
+.acordes .fila{
+    display: flex;
+}
+
+.acordes .fila .col{
+    width: 50%;
+}
+
+.acordes .fila .col h3{
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+
+.acordes .guitarra{
+    margin-top: 25px;
+    border: 10px solid  #5f0000;
+    display: block;
+    width: 35%;
+    margin: auto;
+    border-radius: 10%;
+    
+}
+
+.acordes button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.acordes button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ab765d;
+    z-index: -1;
+    transition: 1s;
+}
+.acordes button:hover .overlay{
+    width: 100%;
+}
+
+
+
+/*Contacto*/
+.contacto {
+    
+    background-image: url(ubicacion.jpg);
+    background-color: #01283f;
+    color: #fff;
+    padding: 45px 13px;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff ;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ab765d;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul{
+    list-style: none;
+}
+
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+
+
+.contacto .col .info ul li i{
+    color: #ab765d;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+
+/*footer*/
+footer{
+    background-color: #011724;
+    color: #fff;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+
+footer .redes{
+    margin-bottom: 10%;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #220000;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
+

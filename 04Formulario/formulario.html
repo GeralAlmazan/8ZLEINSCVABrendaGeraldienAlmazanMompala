@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de un formulario</title>
+
+   <script src="./js/validacion.js"></script>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <p>
+                Todos los formularios que se utilizan en la web utilizan métodos de envio
+                para cada uno de los datos, que nos sirven para las solicitudes de información
+                los más comunes son: 
+                <br>
+                GET: Este método se encarga de enviar la información por la url o la salida
+                estandar del navegador, propicia que se pueda visualizar la información del 
+                formulario en la url.
+                <br> POST: Este método se encarga de enviar la información por la url; pero
+                de forma oculta, lo que ofrece cierte seguridad, este método se usa
+                comunmente para insertar un nuevo registro dentro de los sistemas de 
+                información.
+            </p>
+                <br>
+                <form method="post" name="formulario" onsubmit="return validar(this)">
+
+                    <br>
+                    <div class="datos">
+                        <label>Nombre:</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre" class="input-name">
+                        <br>
+                        <label>Edad:</label>
+                        <br>
+                        <input type="text" name="edad" id="edad" class="input-edad">
+                        <br>
+                        <label>Email:</label>
+                        <br>
+                        <input type="text" name="email" id="email" class="input-email">
+                        <br>
+                        <label>Password:</label>
+                        <br>
+                        <input type="password" name="password" id="password" class="input-password">
+                        <br>
+                        <input type="submit" name="enviar" value="Enviar datos">
+                        <br>
+                        <input type="reset" name="borrar" value="Borrar datos">
+                    </div>
+
+                </form>
+        </div>    
+    </div>
+    
+</body>
+</html>
