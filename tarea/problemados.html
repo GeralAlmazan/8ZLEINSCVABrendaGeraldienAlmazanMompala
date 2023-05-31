@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.</title>
+    <script src="./js/validacionalgo1.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <p>
+                <h3>2. Un vendedor recibe un sueldo base mas un 10% extra por comision de sus ventas, el vendedor desea saber cuanto dinero obtendrá por 
+                    concepto de comisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.</h3>
+                <br>
+                ¿Deseas seber cuánto obtendrás por tus 3 comisiones y tu sueldo total?
+            </p>
+            <form method="post" name="formulario" onsubmit="return validar(this)">
+                <br>
+                <div class="datos">
+                    <label >Comisión 1: </label>
+                    <br>
+                    <input type="text" name="com1" id="com1" class="input-com1" >
+                    <br>
+                    <label >Comisión 2: </label>
+                    <br>
+                    <input type="text" name="com2" id="com2" class="input-com2" >
+                    <br>
+                    <label >Comisión 3: </label>
+                    <br>
+                    <input type="text" name="com3" id="com3" class="input-com3" >
+                    <br>
+                    <label >Sueldo base: </label>
+                    <br>
+                    <input type="text" name="sueldo" id="sueldo" class="input-sueldo" >
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                    <br>
+                    <input type="reset" name="borrar" value="Borrar datos">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

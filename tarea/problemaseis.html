@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6.</title>
+    <script src="./js/validacionalgo1.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <p>
+                <h3>6. Realiza un algoritmo que calcule la edad de una persona.</h3>
+                <br>
+                Descubra su edad.
+            </p>
+            <form method="post" name="formulario" onsubmit="return validar(this)">
+                <div class="datos">
+                    <label >Año de nacimiento: </label>
+                    <br>
+                    <input type="text" name="edad" id="edad" class="input-edad" >
+                    <br>
+                    <label >Año actual: </label>
+                    <br>
+                    <input type="text" name="ano" id="ano" class="input-ano" >
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                    <br>
+                    <input type="reset" name="borrar" value="Borrar datos">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

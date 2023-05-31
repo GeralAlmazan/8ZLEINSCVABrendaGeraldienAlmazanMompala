@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4.</title>
+    <script src="./js/validacionalgo1.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <p>
+                <h3>4. Un alumno desea saber cual será su calificación final en la materia de algoritmos. Dicha calificación se compone de los siguientes porcentajes:</h3>
+                <h3>55% del promedio de sus tres calificaciones parciales.</h3>
+                <h3>30% de la calificacion del examen final.</h3>
+                <h3>15% de la calificación de un trabajo final.</h3>
+                <br>
+                ¿Qué promedio final tendrás?
+            </p>
+            <form method="post" name="formulario" onsubmit="return validar(this)">
+                <br>
+                <div class="datos">
+                    <label >Promedio de las tres calificaciones parciales: </label>
+                    <br>
+                    <input type="text" name="prom" id="prom" class="input-prom" >
+                    <br>
+                    <label >Calificación del examen final: </label>
+                    <br>
+                    <input type="text" name="exa" id="exa" class="input-exa" >
+                    <br>
+                    <label >Calificación del trabajo final: </label>
+                    <br>
+                    <input type="text" name="trabajo" id="trabajo" class="input-trabajo" >
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                    <br>
+                    <input type="reset" name="borrar" value="Borrar datos">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

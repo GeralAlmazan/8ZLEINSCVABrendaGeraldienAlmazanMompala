@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.</title>
+    <script src="./js/validacionalgo1.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <p>
+                <h3>5. Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay en un grupo de estudiantes.</h3>
+                <br>
+                ¿Cuántos alumnos hombres y cuántas alumnas mujeres hay en tu grupo?
+            </p>
+            <form method="post" name="formulario" onsubmit="return validar(this)">
+                <br>
+                <div class="datos">
+                    <label >Número de mujeres: </label>
+                    <br>
+                    <input type="text" name="mujer" id="mujer" class="input-mujer" >
+                    <br>
+                    <label >Número de hombres: </label>
+                    <br>
+                    <input type="text" name="hombre" id="hombre" class="input-hombre" >
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar datos">
+                    <br>
+                    <input type="reset" name="borrar" value="Borrar datos">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
