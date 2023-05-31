@@ -1,25 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//1
+//3
 function validar (formulario){
 
     var checkOk = "0123456789" + "0123456789";
 
-    var checkString = formulario.inv.value;
+    var checkString = formulario.sub.value;
 
     var todoesValido = true;
 
@@ -40,15 +24,14 @@ function validar (formulario){
         }
     }
     if (!todoesValido){
-        alert("Escriba únicamente números en el campo Inversión.");
-        formulario.inv.focus();
+        alert("Escriba únicamente números en el campo Subtotal.");
+        formulario.sub.focus();
         return false;
     }
 
-    var inv = parseInt(document.getElementById("inv").value);
-    var ganancia = (inv)*(0.02);
-    var saldonvo = inv+ganancia;
+    var sub = parseInt(document.getElementById("sub").value);
+    var total = (sub)*(0.85);
 
-    alert("Ha ganado: " + ganancia + " pejecoins.");
-    alert("Su nuevo saldo es: " + saldonvo + " pejecoins.");
+    alert("El total a pagar es: " + total);
+    
 }
