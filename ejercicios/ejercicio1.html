@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+    <title>Ejercicios JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+       <!--Menú-->
+       <div class="contenedor-header"> 
+        <header>
+            <div class="logo">
+                <a href="#">Algoritmos</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li> <a href="#ejerciciouno">Ejercicio 1</a></li>
+                    <li> <a href="#ejerciciodos">Ejercicio 2</a></li>
+                    <li> <a href="#ejerciciotres">Ejercicio 3</a></li>
+                    <li> <a href="#ejerciciocuatro">Ejercicio 4</a></li>
+                    <li> <a href="#ejerciciocinco">Ejercicio 5</a></li>
+                    <li> <a href="#ejercicioseis">Ejercicio 6</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-reponsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+
+
+
+
+    <!-- Ejercicio 1 -->
+    <section id="ejerciciouno" class="ejerciciouno">
+    <div class="container1" >
+        <form method="get" name="formulario" action="">
+            <!-- Nombre del algoritmo -->
+            <label>1 Calculo de inversion de capital al 2% mensual</label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la cantidad -->
+                    <tr>
+                        <td>Introduce la cantidad a invertir: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <br>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="cantidad"  value="" maxlength="5" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular interes" name="enviar" onclick="interes()">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            Su saldo total con el interes al 2% mensual es de: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="sueldoI" id="cantidadI">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Ejercicio 2 -->
+    <section id="ejerciciodos" class="ejerciciodos">
+    <div class="container" >
+        <form method="get" name="segundo" action="">
+            <!-- Nombre del algoritmo -->
+            <label>2 Calculo de sueldo base más comisión de tres ventas</label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la cantidad -->
+                    <tr>
+                        <td>Introdusca sueldo base: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="sueldob" value="" maxlength="5" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+                     <!-- Ingresa la venta1 -->
+                     <tr>
+                        <td>Introdusca la primera venta: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="venta1" value="" maxlength="5" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr> <!-- Ingresa la venta2 -->
+                    <tr>
+                        <td>Introdusca la segunda venta: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="venta2" value="" maxlength="5" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr> <!-- Ingresa la venta3 -->
+                    <tr>
+                        <td>Introdusca la tercera venta: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="venta3"  value="" maxlength="5" onkeyup="Comi(event, this)">         
+                        </td>
+                    </tr>
+
+
+
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular" name="enviar" onclick="sueldo()">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            La ganancia en comisiones es la siguiente: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="comision" id="cantidad2">
+                        </td>
+
+                    </tr><!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            El total ganado en el mes sumando sueldo base mas el 10% de comision de cada una de las ventas es: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="sueldoT" id="cantidad2">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+     <!-- Ejercicio 3 -->
+     <section id="ejerciciotres" class="ejerciciotres">
+    <div class="container" >
+        <form method="get" name="tercero" action="">
+            <!-- Nombre del algoritmo -->
+            <label>3 Calculo de descuento del 15% del total a pagar de la compra</label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la cantidad -->
+                    <tr>
+                        <td>Introduce el total a pagar: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="total1"  value="" maxlength="5" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular descuento" name="enviar" onclick="descuento()">
+                        </td>
+                    </tr>
+
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            El descuento a aplicar es de: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="descuent" id="cantidad3">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            El total de la compra con el descuento aplicado es de: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="totalf" id="cantidad3">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Ejercicio 4 -->
+    <section id="ejerciciocuatro" class="ejerciciocuatro">
+    <div class="container" >
+        <form method="get" name="cuarto" action="">
+            <!-- Nombre del algoritmo -->
+            <label>4 Calculo de calificacion final 55% promedio de las tres calificaciones, 30% examen y 15% trabajo final</label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la calificacion primer parcial -->
+                    <tr>
+                        <td>Introduce la primera calificacion del primer parcial: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="c1"  value="" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+                     <!-- Ingresa la calificacion segundo parcial -->
+                     <tr>
+                        <td>Introduce la primera calificacion del segundo parcial: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="c2" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+                     <!-- Ingresa la calificacion tercer parcial -->
+                     <tr>
+                        <td>Introduce la primera calificacion del tercer parcial: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="c3" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+                      <!-- Ingresa la calificacion del examen -->
+                      <tr>
+                        <td>Introduce la calificacion del examen: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="exam" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+                      <!-- Ingresa la calificacion del tabajo final -->
+                      <tr>
+                        <td>Introduce la calificacion del trabajo final: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="trabajo"maxlength="3" onkeyup="Comi(event, this)">         
+                        </td>
+                    </tr>
+
+
+
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular calificacion" name="enviar" onclick="calificacion()">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            Su califiacacion final es: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="cf" id="calfin">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Ejercicio 5 -->
+    <section id="ejerciciocinco" class="ejerciciocinco">
+    <div class="container" >
+        <form method="get" name="quinto" action="">
+            <!-- Nombre del algoritmo -->
+            <label>5 Calculo de porcentaje hombres y mujeres que hay en una aula </label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la cantidad -->
+                    <tr>
+                        <td>Introdusca la cantidad de alumnos del salon: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="taalum" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+                     <!-- Ingresa la venta1 -->
+                     <tr>
+                        <td>Introdusca la cantidad de alumnos hombres: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="hom" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr> <!-- Ingresa la venta2 -->
+                    <tr>
+                        <td>Introdusca la cantidad de alumnas mujeres: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="muj" maxlength="3" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+
+
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular porcentaje " name="enviar" onclick="porcentaje()">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            El porcentaje de hombres en la aula es: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="porh" id="porhom">
+                        </td>
+
+                    </tr><!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            El porcentaje de mujeres en la aula es: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="porm" id="pormuj">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+     <!-- Ejercicio 6 -->
+
+     <section id="ejercicioseis" class="ejercicioseis">
+     <div class="container" >
+        <form method="get" name="sexto" action="">
+            <!-- Nombre del algoritmo -->
+            <label>6 Calcular la edad</label>
+            <!-- se inicia el algoritmo  -->
+            <div class="table-content" >
+                <table>
+
+                    <!-- Ingresa la cantidad -->
+                    <tr>
+                        <td>Introduce el año actual: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="añoac" maxlength="4" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+                     <!-- Ingresa la cantidad -->
+                     <tr>
+                        <td>Introduce el año en el que naciste: </td>
+                        <br>
+                        <td></td>
+                        <td>
+                            <!-- campo para ingresar  se agrega el evento para que se delimiten a solo numeros-->
+                            <input type="text" name="añonaci" maxlength="4" onkeyup="Comi(event, this)" >         
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <!-- se agrega boton para generar eventoen js -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Calcular edad" name="enviar" onclick="edad()">
+                        </td>
+                    </tr>
+                    <!-- campo que muestra la cantidad que se ganara  -->
+                    <tr>
+                        <td>
+                            Su edad es: 
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" readonly="readonly" class="input_text" name="eda" id="eda1">
+                        </td>
+                    </tr>
+                    <!-- boton que activara el evento borrar -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borar" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+    <script src="./js/interes.js" ></script>
+
+
+
+    
+  <!-- FOOTER -->
+  <footer>
+    <a href="#ejerciciouno" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <div class="redes">
+       
+            <a href="./index.html">Regresar a pagina principal</a>
+       
+    </div>
+
+
+
+  </footer>
+
+   
+
+
+</body>
+</html>

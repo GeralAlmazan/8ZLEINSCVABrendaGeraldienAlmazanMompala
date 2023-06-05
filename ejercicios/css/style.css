@@ -1,0 +1,139 @@
+/* Estilos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a39696;
+  }
+  
+  .container {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table td {
+    padding: 5px;
+  }
+  
+  input[type="button"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="text"].input_text {
+    width: 150px;
+  }
+  
+  /* Estilos para el menú */
+  
+  .contenedor-header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el menú responsive */
+  
+  .nav-reponsive {
+    display: none;
+  }
+  
+  /* Estilos para los formularios */
+  
+  .table-content {
+    margin-top: 20px;
+  }
+  
+  .table-content table {
+    border: 1px solid #ccc;
+  }
+  
+  .table-content table td {
+    border: 1px solid #ccc;
+  }
+  
+  .table-content input[type="text"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  /*footer*/
+footer{
+    background-color: #011724;
+    color: #fff;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+
+footer .redes{
+    margin-bottom: 5%;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #220000;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
+
