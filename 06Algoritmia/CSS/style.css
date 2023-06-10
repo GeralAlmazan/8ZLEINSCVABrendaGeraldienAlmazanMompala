@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .problema-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .problema-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .problema-content {
+    margin-top: 20px;
+  }
+  
+  .problema-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .problema-button {
+    padding: 10px 20px;
+    background-color:  #3a61ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .problema-output {
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .tablas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .problema-table {
+    width: 40%;
+    margin-right: 20px;
+  }
+  
+  .problema-table th {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  .problema-table td {
+    padding: 8px 0;
+  }
+  
+  .problema-table input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .problema-table input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .problema-table input::-webkit-outer-spin-button,
+  .problema-table input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .problema-table input[type="number"]::-webkit-outer-spin-button,
+  .problema-table input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .problema-table input[type="button"] {
+    padding: 10px 20px;
+    background-color:  #3a61ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .problema-table input[type="button"]:hover {
+    background-color: #3a61ce;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tablas {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .problema-table {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
